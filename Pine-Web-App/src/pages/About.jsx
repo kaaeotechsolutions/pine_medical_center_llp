@@ -1,17 +1,16 @@
 import { Box } from '@chakra-ui/react';
 import React from 'react'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
-import Hero from '../containers/AboutHero'
-import Team from '../containers/Team'
-import Testimonial from '../components/Testimonial';
+import {Navbar, Footer, Testimonial, Equipment} from '../components'
+import {AboutHero, Team} from '../containers'
+
 
 const About = () => {
   return (
     <Box>
         <Navbar/>
-        <Hero/>
+        <AboutHero/>
         <Team/>
+        <Equipment/>
         <Testimonial/>
         <Footer/>
     </Box>

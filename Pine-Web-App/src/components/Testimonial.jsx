@@ -29,17 +29,12 @@ const testimonials = [
     },
 ];
 
-const SingleTestimonial = ({ testimonial, index, isCurrent }) => {
+const SingleTestimonial = ({ testimonial }) => {
     const { colorMode } = useColorMode();
     const bg = { light: "white", dark: "gray.800" };
     const color = { light: "gray.700", dark: "gray.400" };
     const borderColor = { light: "gray.200", dark: "gray.600" };
 
-    const variants = {
-        current: { opacity: 1, x: 0 },
-        next: { opacity: 0, x: 50 },
-        prev: { opacity: 0, x: -50 },
-    };
 
     return (
         <Box
@@ -65,7 +60,7 @@ const Testimonial = () => {
 
     return (
         <Box maxW="800px" mx="auto" my={16}>
-            <Heading textTransform="capitalize" as="h2" my={10} size="lg" textAlign="center">What out Patient Say</Heading>
+            <Heading textTransform="capitalize" as="h2" my={10} size="lg" textAlign="center">What our Patient Say</Heading>
             <Swiper
                 navigation={true}
                 modules={[Autoplay]}

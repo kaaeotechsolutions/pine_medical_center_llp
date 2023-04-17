@@ -8,6 +8,7 @@ import doctor3 from './doctor3.jpg';
 import hero_img from './hero_img.webp';
 import Pharmacy from './Pharmacy.jpg';
 import logo from './pine_logo-transformed.png';
+import service_hero_img from './service_hero_img.jpg'
 
 export {
     about_hero_img,
@@ -19,5 +20,6 @@ export {
     doctor3,
     hero_img,
     Pharmacy,
-    logo
+    logo,
+    service_hero_img
 }

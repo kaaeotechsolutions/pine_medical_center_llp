@@ -1,23 +1,17 @@
-import React from 'react'
-import NavBar from '../components/Navbar'
-import Footer from '../components/Footer'
-import Hero from '../containers/Hero'
-import AboutHero from '../containers/AboutHero'
-import AppointmentForm from '../components/AppointmentForm'
-import ContactSection from '../containers/ContactSection'
-import CardGallery from '../components/CardGallery'
-
+import React from 'react';
+import { Navbar, Footer, ServiceCard } from '../components';
+import { Hero, AboutHero, ContactSection } from '../containers';
 
 const Home = () => {
   return (
     <section className=" ">
       <div className="">
-        <NavBar />
+        <Navbar />
       </div>
       <main className="">
         <Hero />
         <AboutHero />
-        <CardGallery/>
+        <ServiceCard />
         <ContactSection />
       </main>
       <div className=" ">

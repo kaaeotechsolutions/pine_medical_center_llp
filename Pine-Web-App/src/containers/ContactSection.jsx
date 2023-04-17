@@ -35,7 +35,7 @@ const ContactSection = () => {
   });
 
   return (
-    <motion.div initial="initial" animate="animate" variants={variants}>
+    <motion.div id='contactform' initial="initial" animate="animate" variants={variants}>
       <Box bg={bg} py={10} maxW="7xl" mx="auto">
         <Heading as="h2" size="xl" mb="6" textAlign="center">
           Contact Us
