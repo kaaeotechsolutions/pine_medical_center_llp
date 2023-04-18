@@ -1,6 +1,7 @@
 import React from "react";
-import { Box, Heading, Text, Image, Flex, useBreakpointValue, useColorModeValue } from "@chakra-ui/react";
+import { Box, Heading, Text, Flex, useBreakpointValue, useColorModeValue } from "@chakra-ui/react";
 import { motion } from "framer-motion";
+import {Image} from '@chakra-ui/image'
 
 
 const usefulInfoData = [

@@ -1,14 +1,15 @@
 import React from 'react'
-import { Navbar, Footer} from '../components';
-import {Team} from '../containers';
-
+import { SocialMedia } from '../components';
+import { Team, TeamHero } from '../containers';
+import { doctorData, managementData } from '../constants/data'
 
 const OurTeam = () => {
     return (
         <section className="">
-            <Navbar />
-            <Team />
-            <Footer />
+            <TeamHero/>
+            <Team title="Management" person={managementData} />
+            <Team title="Doctor" person={doctorData} />
+            <SocialMedia/>
         </section>
     )
 }

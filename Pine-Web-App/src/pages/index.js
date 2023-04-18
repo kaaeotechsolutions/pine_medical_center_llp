@@ -3,6 +3,7 @@ import Contact from './Contact'
 import Home from './Home'
 import OurTeam from './OurTeam'
 import Service from './Service'
+import Blog from './Blog'
 
 export {
     About,
@@ -10,4 +11,5 @@ export {
     Home,
     OurTeam,
     Service,
+    Blog,
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Flex, Heading, Text, Icon, Link, useColorModeValue } from "@chakra-ui/react";
+import { Box, Flex, Text, Icon, Link, useColorModeValue } from "@chakra-ui/react";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
 
@@ -48,12 +48,12 @@ const ContactInfo = () => {
                     gap={4}
                     justifyContent="center"
                 >
-                    <ContactInfoItem icon={FaPhoneAlt} text="+91 1234567890" />
+                    <ContactInfoItem icon={FaPhoneAlt} text="+91 8790969988" />
                     <ContactInfoItem
                         icon={FaEnvelope}
                         text={
                             <Link href="mailto:info@pinemedicalcenter.com">
-                                info@pinemedicalcenter.com
+                                info@pinemedical.in
                             </Link>
                         }
                     />

@@ -1,10 +1,13 @@
-import { Box, Text, Heading, Stack, IconButton, Input, Button, useToast } from "@chakra-ui/react";
+import { Box, Text, Heading, Stack, IconButton, Input, Button, useToast, useColorModeValue } from "@chakra-ui/react";
 import { useState } from "react";
 import { socialLinks } from '../constants/data';
 
 const SocialMedia = () => {
   const [email, setEmail] = useState("");
   const toast = useToast();
+
+  const textColor = useColorModeValue("#0a192f", "#f5f5f5");
+  const bg = useColorModeValue('gray.100', 'gray.700');
 
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
@@ -24,7 +27,7 @@ const SocialMedia = () => {
   };
 
   return (
-    <Box py={12} bg="gray.50">
+    <Box py={12} bg={bg}>
       <Box maxW="7xl" mx="auto" px={[4, 8]}>
         <Heading as="h2" size="xl" textAlign="center" mb={8}>
           Join our Community

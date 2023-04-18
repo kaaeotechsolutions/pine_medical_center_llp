@@ -1,6 +1,8 @@
-import { Box, Flex, Heading, Text, Button, useColorModeValue, useBreakpointValue, Image } from '@chakra-ui/react';
+import { Box, Flex, Heading, Text, Button, useColorModeValue, useBreakpointValue } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
+import {Image} from '@chakra-ui/image'
 import about_hero_img from '../assets/about_hero_img.jpg'
+import { NavLink } from 'react-router-dom';
 
 const AboutHero = () => {
   const motionProps = {
@@ -31,7 +33,7 @@ const AboutHero = () => {
                 We offer urgent care and same-day appointments with extended hours, where our patients will see a physician on every visit.
                 We offer secure electronic access to your medical records. Patient may request medication refills or schedule an appointment through our patient portal.
               </Text>
-              <Image className=' rounded-md mt-4' src={about_hero_img}></Image>
+              <Image className=' rounded-md mt-4' alt='about_hero_img' src={about_hero_img}></Image>
             </Box>
           </motion.div>
           <motion.div {...motionProps}>
@@ -47,7 +49,7 @@ const AboutHero = () => {
         </Flex>
         <Box textAlign="center">
           <Button colorScheme="blue" size="lg" mt={2}>
-            Learn More
+           <NavLink to="/aboutus">Learn More</NavLink> 
           </Button>
         </Box>
       </Box>

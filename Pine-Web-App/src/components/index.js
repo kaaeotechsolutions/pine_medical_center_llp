@@ -9,7 +9,7 @@ import ServiceCard from './ServiceCard';
 import SocialMedia from './SocialMedia';
 import Testimonial from './Testimonial';
 import UsefulInformation from './UsefulInformation';
-
+import BlogCard from './BlogCard';
 
 export {
     AppointmentForm,
@@ -23,4 +23,5 @@ export {
     SocialMedia,
     Testimonial,
     UsefulInformation,
+    BlogCard,
 }

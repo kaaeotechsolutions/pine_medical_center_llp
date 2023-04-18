@@ -1,10 +1,11 @@
-import AboutHero from './AboutHero'
-import ContactHero from './ContactHero'
-import ContactSection from './ContactSection'
-import Hero from './Hero'
-import ServiceHero from './ServiceHero'
-import Team from './Team'
-
+import AboutHero from './AboutHero';
+import ContactHero from './ContactHero';
+import ContactSection from './ContactSection';
+import Hero from './Hero';
+import ServiceHero from './ServiceHero';
+import Team from './Team';
+import TeamHero from './TeamHero';
+import BlogHero from './BlogHero'
 
 export {
     AboutHero,
@@ -13,4 +14,6 @@ export {
     Hero,
     ServiceHero,
     Team,
+    TeamHero,
+    BlogHero,
 }

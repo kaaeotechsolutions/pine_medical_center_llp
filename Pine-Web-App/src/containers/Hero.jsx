@@ -1,6 +1,7 @@
 import { Box, Heading, Text, Button, useColorModeValue, useBreakpointValue } from "@chakra-ui/react";
 import { motion } from 'framer-motion';
 import hero_img from '../assets/hero_img.webp'
+import { NavLink } from "react-router-dom";
 
 const Hero = () => {
   const motionProps = {
@@ -16,7 +17,7 @@ const Hero = () => {
   const bg = useColorModeValue('gray.100', 'gray.700');
 
   return (
-    <Box bgImage={hero_img} bgSize='cover' bgRepeat='no-repeat' pt={{ base: "12", md: "50" }} pb="12" px={{ base: "12", md: "20" }}>
+    <Box bgImage={hero_img} bgSize='cover' bgRepeat='no-repeat' pt="4" pb="12" px={{ base: "12", md: "20" }}>
       <Box bg={bg} className=" backdrop-blur-sm p-4 rounded-md" maxW="7xl" mx="auto" textAlign={{ base: "center", md: "left" }}>
         <motion.div {...motionProps}>
           <Heading
@@ -41,7 +42,7 @@ const Hero = () => {
             New and established patients in Puppalguda, Hyderabad and surrounding areas can call our office at  phone no   or you may request an appointment online, and our office staff will contact you to confirm your time.
           </Text>
           <Button colorScheme="blue" size="lg" px="10" bg={useColorModeValue("#4d4d4d", "white")}>
-            Book an appointment
+            <NavLink to='/contact'>Book an appointment</NavLink>
           </Button>
         </motion.div>
       </Box>

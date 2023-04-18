@@ -1,6 +1,7 @@
 import React from "react";
-import { Box, Heading, Text, Image, Flex, useBreakpointValue, useColorModeValue, Button } from "@chakra-ui/react";
+import { Box, Heading, Text, Flex, useBreakpointValue, useColorModeValue, Button } from "@chakra-ui/react";
 import { motion } from "framer-motion";
+import {Image} from '@chakra-ui/image';
 import { service_hero_img } from '../assets'
 const MotionImage = motion(Image);
 
@@ -16,7 +17,7 @@ const ServiceHero = () => {
     };
 
     return (
-        <Box bg={bg} px={8} py={20}>
+        <Box bg={bg} px={8} pb={12}>
             <Flex direction={{base:'column', lg:'row'}} gap={6} maxW="7xl" mx="auto" alignItems="center">
                 <Box w={{base:'100%', lg:'50%'}} mb={[10, 0]}>
                     <Heading as="h1" size="2xl" mb={8} fontWeight="bold">
