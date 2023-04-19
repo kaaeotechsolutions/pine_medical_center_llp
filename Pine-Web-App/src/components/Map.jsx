@@ -1,7 +1,5 @@
 import { Box, Flex, ScaleFade, Heading, useColorModeValue, useBreakpointValue } from "@chakra-ui/react";
 
-const mapSrc = 'https://www.google.com/maps/place/S.M.+Residency/@17.3944816,78.3854096,17z';
-
 const Map = () => {
   const bg = useColorModeValue("gray.200", "gray.700");
   const textSize = useBreakpointValue({ base: 'lg', md: 'xl' });

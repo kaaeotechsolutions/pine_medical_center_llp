@@ -32,7 +32,7 @@ const SocialMedia = () => {
         <Heading as="h2" size="xl" textAlign="center" mb={8}>
           Join our Community
         </Heading>
-        <Stack direction={["column", "row"]} spacing={4} justifyContent="center" alignItems="center" mb={8}>
+        <Box className="flex justify-center gap-4 flex-wrap" mb={8}>
           {
             socialLinks.map((value) => {
               return (
@@ -49,7 +49,7 @@ const SocialMedia = () => {
               )
             })
           }
-        </Stack>
+        </Box>
         <Box maxW="md" mx="auto" mb={8}>
           <Text mb={4} fontSize="lg">
             Subscribe to our newsletter to receive updates about our latest services, events, and promotions.

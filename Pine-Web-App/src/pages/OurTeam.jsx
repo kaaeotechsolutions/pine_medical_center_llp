@@ -6,10 +6,12 @@ import { doctorData, managementData } from '../constants/data'
 const OurTeam = () => {
     return (
         <section className="">
-            <TeamHero/>
+            <TeamHero />
             <Team title="Management" person={managementData} />
-            <Team title="Doctor" person={doctorData} />
-            <SocialMedia/>
+            <div id="doctor">
+                <Team title="Doctor" person={doctorData} />
+            </div>
+            <SocialMedia />
         </section>
     )
 }

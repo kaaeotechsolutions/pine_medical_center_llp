@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Flex, Heading, Text, Button, useBreakpointValue } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { team_hero_img } from '../assets';
+import { NavLink } from "react-router-dom";
 
 const MotionFlex = motion(Flex);
 
@@ -30,8 +31,8 @@ const TeamHero = () => {
             animate="visible"
             variants={variants}
           >
-            <Heading display='flex' as="h1" size={breakpoint === "base" ? "xl" : "4xl"} color="white" textAlign="center">
-              We are <Text mx={4} color="green.400">Pine Medical</Text> <Text color="blue.700">Center LLP</Text>
+            <Heading as="h1" size={breakpoint === "base" ? "xl" : "4xl"} color="white" textAlign="center">
+              We are <span className=" text-green-600">Pine Medical</span> <span className=" text-blue-900">Center LLP</span>
             </Heading>
             <Text mt={8} color="white" fontSize={breakpoint === "base" ? "md" : "2xl"} textAlign="center">
               We work together to take care of your health and ensure a faster recovery for you.
@@ -41,7 +42,7 @@ const TeamHero = () => {
               colorScheme="blue"
               size={breakpoint === "base" ? "md" : "lg"}
             >
-              Learn More
+             <NavLink to='/aboutus'>Learn More</NavLink> 
             </Button>
           </MotionFlex>
         </Box>

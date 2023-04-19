@@ -21,7 +21,7 @@ const DoctorCard = ({ doctor, toggle }) => {
                 bg={bg[colorMode]}
                 color={color[colorMode]}
             >
-                <Image src={doctor.image} alt={doctor.name} />
+                <Image h={450} src={doctor.image} alt={doctor.name} />
                 <Box p="6">
                     <Heading textTransform="capitalize" as="h3" size="md">
                         {doctor.name}
@@ -44,7 +44,7 @@ const Team = ({ title, person }) => {
             <Heading as="h2" mt={10} size="lg" textAlign="center">
                 Our {title}s
             </Heading>
-            <Flex gap={6} my="8" justifyContent="center" flexWrap="wrap">
+            <Flex gap={6} my="8" mx={{base:8,md:0}} justifyContent="center" flexWrap="wrap">
                 {person.map((doctor, index) => (
                     <DoctorCard toggle={title === "Doctor" ? true : false} key={index} doctor={doctor} />
                 ))}

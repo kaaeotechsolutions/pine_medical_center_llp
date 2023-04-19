@@ -35,7 +35,7 @@ const gallery = [
     },
 ];
 
-const Card = ({ title, description, imageUrl, url }) => {
+const Card = ({ title, description, imageUrl }) => {
     const bg = useColorModeValue('white', 'gray.700');
     const textColor = useColorModeValue('gray.800', 'white');
     const bodytextColor = useColorModeValue('gray.600', 'gray.200');
@@ -63,11 +63,6 @@ const Card = ({ title, description, imageUrl, url }) => {
                     <Text mt="2" color={bodytextColor}>
                         <CropText text={description} />
                     </Text>
-                    <Button colorScheme="blue" variant="ghost" mt={4}>
-                        <NavLink to={url}>
-                            Book Now
-                        </NavLink>
-                    </Button>
                 </Box>
             </Box>
         </motion.div>
@@ -84,7 +79,7 @@ const ServiceCard = () => {
             </Heading>
             <SimpleGrid columns={[1, 2, 3, 4]} gap={10} mx={[4, 6, 10]} justifyContent="center">
                 {gallery.map((card) => (
-                    <Card key={card.id} title={card.title} description={card.description} imageUrl={card.imageUrl} url={card.url} />
+                    <Card key={card.id} title={card.title} description={card.description} imageUrl={card.imageUrl} />
                 ))}
             </SimpleGrid>
         </Box>

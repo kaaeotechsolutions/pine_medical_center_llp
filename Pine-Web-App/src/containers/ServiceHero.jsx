@@ -3,6 +3,7 @@ import { Box, Heading, Text, Flex, useBreakpointValue, useColorModeValue, Button
 import { motion } from "framer-motion";
 import {Image} from '@chakra-ui/image';
 import { service_hero_img } from '../assets'
+import { NavLink } from "react-router-dom";
 const MotionImage = motion(Image);
 
 const ServiceHero = () => {
@@ -27,7 +28,7 @@ const ServiceHero = () => {
                         At Pine Medical Center, we believe in providing the highest quality medical care in a comfortable and welcoming environment.
                     </Text>
                     <Button size="lg" colorScheme="blue">
-                        Book an Appointment
+                       <NavLink to='/appointment-form'>Book an Appointment</NavLink> 
                     </Button>
                 </Box>
                 <Box w={{base:'100%', lg:'50%'}} position="relative">
@@ -35,7 +36,7 @@ const ServiceHero = () => {
                         src={service_hero_img}
                         alt="Doctor and patient"
                         w="full"
-                        h={breakpoint === "base" ? "300px" : "500px"}
+                        h={"500px"}
                         objectFit="cover"
                         borderRadius="md"
                         initial="hidden"
@@ -43,11 +44,11 @@ const ServiceHero = () => {
                         variants={variants}
                         transition={{ duration: 0.5, delay: 0.5 }}
                     />
-                    <Box mr={4} bg={bg} w={['100%', '60%']} h={['30%', '50%']} position="absolute" right="0" top="50%" transform="translateY(-50%)" boxShadow="lg" borderRadius="lg" p={8}>
+                    <Box mr={4} bg={bg} w={['90%', '60%']} h={'50%'} position={"absolute"} right={{base:'-10px',md:"0"}} top="50%" transform="translateY(-50%)" boxShadow="lg" borderRadius="lg" p={8}>
                         <Text fontSize="xl" fontWeight="bold" mb={4}>We Care About Your Health</Text>
                         <Text mb={4}>We are dedicated to providing you and your family with the highest quality medical care, in a warm and welcoming environment.</Text>
                         <Button size="md" colorScheme="blue">
-                            Learn More
+                           <NavLink to='/aboutus'>Learn More</NavLink> 
                         </Button>
                     </Box>
                 </Box>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Heading, Text, Button, Link, useColorModeValue } from "@chakra-ui/react";
+import { NavLink } from "react-router-dom";
 
 const ContactHero = () => {
     const textColor = useColorModeValue("#0a192f", "#f5f5f5");
@@ -14,9 +15,9 @@ const ContactHero = () => {
                 Our team of experienced medical professionals is here to help you.
             </Text>
             <Button colorScheme="blue" size="lg">
-                <Link href="#contactform">
+                <NavLink to='/appointment-form'>
                     Contact Us
-                </Link>
+                </NavLink>
             </Button>
         </Box>
     );

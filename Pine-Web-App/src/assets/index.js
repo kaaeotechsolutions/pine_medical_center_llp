@@ -12,6 +12,8 @@ import service_hero_img from './service_hero_img.jpg';
 import Mohd_Moizuddin from './Mohd_Moizuddin.jpeg';
 import team_hero_img from './team_hero_img.jpg'
 import blog_hero_img from './blog_hero_img.jpg'
+import SIRAJ_FATIMA from './SIRAJ_FATIMA.jpg';
+import SARDARUDDIN from './SARDARUDDIN.jpg'
 
 
 export {
@@ -28,5 +30,7 @@ export {
     service_hero_img,
     team_hero_img,
     blog_hero_img,
-    Mohd_Moizuddin
+    Mohd_Moizuddin,
+    SIRAJ_FATIMA,
+    SARDARUDDIN
 }

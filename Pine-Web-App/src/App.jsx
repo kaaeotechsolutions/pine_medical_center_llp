@@ -3,7 +3,7 @@ import { Route, Routes, BrowserRouter, useLocation } from 'react-router-dom';
 import { ChakraProvider } from '@chakra-ui/react';
 import { Home, About, Service, OurTeam, Contact, Blog } from './pages'
 import './App.css';
-import { Footer, Navbar } from './components';
+import { AppointmentForm, Footer, Navbar } from './components';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -30,6 +30,7 @@ const App = () => {
           <Route path='/contact' element={<Contact />} />
           <Route path='/team' element={<OurTeam />} />
           <Route path='/blog' element={<Blog />} />
+          <Route path='/appointment-form' element={<AppointmentForm />} />
         </Routes>
         <Footer />
       </BrowserRouter>

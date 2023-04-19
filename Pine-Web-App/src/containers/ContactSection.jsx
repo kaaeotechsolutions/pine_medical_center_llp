@@ -41,7 +41,7 @@ const ContactSection = () => {
           Contact Us
         </Heading>
         <Flex my={5} mx={mx} gap={gap} flexDirection={{ base: 'column', lg: 'row' }} justify="center">
-          <AppointmentForm />
+          {/* <AppointmentForm /> */}
           <Map />
         </Flex>
       </Box>

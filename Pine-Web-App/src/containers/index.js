@@ -5,7 +5,8 @@ import Hero from './Hero';
 import ServiceHero from './ServiceHero';
 import Team from './Team';
 import TeamHero from './TeamHero';
-import BlogHero from './BlogHero'
+import BlogHero from './BlogHero';
+import FormHero from './FormHero';
 
 export {
     AboutHero,
@@ -16,4 +17,5 @@ export {
     Team,
     TeamHero,
     BlogHero,
+    FormHero,
 }
