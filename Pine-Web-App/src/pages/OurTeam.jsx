@@ -9,7 +9,7 @@ const OurTeam = () => {
             <TeamHero />
             <Team title="Management" person={managementData} />
             <div id="doctor">
-                <Team title="Doctor" person={doctorData} />
+                <Team title="Team" person={doctorData} />
             </div>
             <SocialMedia />
         </section>

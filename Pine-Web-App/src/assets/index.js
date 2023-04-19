@@ -13,8 +13,9 @@ import Mohd_Moizuddin from './Mohd_Moizuddin.jpeg';
 import team_hero_img from './team_hero_img.jpg'
 import blog_hero_img from './blog_hero_img.jpg'
 import SIRAJ_FATIMA from './SIRAJ_FATIMA.jpg';
-import SARDARUDDIN from './SARDARUDDIN.jpg'
-
+import SARDARUDDIN from './SARDARUDDIN.jpg';
+import Irfan from './Irfan.jpeg';
+import Burhan from './Burhanuddin.png'
 
 export {
     about_hero_img,
@@ -32,5 +33,7 @@ export {
     blog_hero_img,
     Mohd_Moizuddin,
     SIRAJ_FATIMA,
-    SARDARUDDIN
+    SARDARUDDIN,
+    Irfan,
+    Burhan
 }

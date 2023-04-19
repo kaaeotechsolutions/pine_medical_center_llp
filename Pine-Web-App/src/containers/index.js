@@ -7,6 +7,7 @@ import Team from './Team';
 import TeamHero from './TeamHero';
 import BlogHero from './BlogHero';
 import FormHero from './FormHero';
+import Career from './Career'
 
 export {
     AboutHero,
@@ -18,4 +19,5 @@ export {
     TeamHero,
     BlogHero,
     FormHero,
+    Career,
 }

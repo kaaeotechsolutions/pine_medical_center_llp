@@ -49,9 +49,9 @@ const Hero = () => {
                   mr={4}
                   mb={4}
                 >
-                  <NavLink to='/appointment-form'>
+                  <Link target="_blank" href="https://forms.gle/hLddKdbcgNM1DaFc9">
                     Book Appointment
-                  </NavLink>
+                  </Link>
                 </Button>
                 <Button
                   leftIcon={<FaUserMd />}

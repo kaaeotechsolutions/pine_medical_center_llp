@@ -1,5 +1,5 @@
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaEnvelope } from "react-icons/fa";
-import { doctor1, doctor2, doctor3, Mohd_Moizuddin, SARDARUDDIN, SIRAJ_FATIMA } from '../assets';
+import { doctor1, doctor2, doctor3, Mohd_Moizuddin, SARDARUDDIN, SIRAJ_FATIMA, Irfan, Burhan } from '../assets';
 
 export const links = [
     {
@@ -25,6 +25,10 @@ export const links = [
     {
         title: "Contact Us",
         link: "/contact"
+    },
+    {
+        title: "Careers",
+        link: "/career"
     }
 ]
 
@@ -58,23 +62,24 @@ export const socialLinks = [
 
 export const doctorData = [
     {
-        name: "Dr. John Doe",
-        specialty: "Cardiology",
-        bio: "Dr. John Doe is a board-certified cardiologist with over 10 years of experience. He received his medical degree from Harvard Medical School and completed his residency at Johns Hopkins Hospital. He is dedicated to providing the highest quality care to his patients and is passionate about educating the community on heart health.",
-        image: doctor1,
+        name: "Mr. L. Narayan Tiwari",
+        specialty: "Executive",
+        bio: "",
+        image: "",
     },
     {
-        name: "Dr. Jane Smith",
-        specialty: "Pediatrics",
-        bio: "Dr. Jane Smith is a pediatrician with over 15 years of experience. She received her medical degree from Yale School of Medicine and completed her residency at Boston Children's Hospital. She is committed to providing compassionate care to children of all ages and helping parents navigate the challenges of parenthood.",
-        image: doctor2,
+        name: "Mr. M. A. Irfan",
+        specialty: "Manager & HR",
+        bio: "",
+        image: Irfan,
     },
     {
-        name: "Dr. James Lee",
-        specialty: "Oncology",
-        bio: "Dr. James Lee is a board-certified oncologist with over 20 years of experience. He received his medical degree from Stanford University School of Medicine and completed his residency at Memorial Sloan Kettering Cancer Center. He is dedicated to providing personalized, evidence-based care to his patients and is actively involved in cancer research.",
-        image: doctor3,
+        name: "Mr. Burhanuddin A. S.",
+        specialty: "Developer",
+        bio: "",
+        image: Burhan,
     },
+    
 ];
 
 export const managementData = [
